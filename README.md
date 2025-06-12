@@ -44,3 +44,45 @@ Try it live on [Streamlit Cloud](https://your-app-link-here) 🚀
 
 ## 📂 Project Structure
 
+Vehicle_Pred_Proj/
+│
+├── app.py # Streamlit app frontend
+├── xgboost_vehicle_price_model.pkl # Trained pipeline (preprocessor + model)
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+└── data/ # (Optional) raw or processed datasets
+
+
+---
+
+## 📈 Model Training Summary
+
+- Target variable was log-transformed using `np.log1p()`.
+- Hyperparameter tuning via `GridSearchCV` on:
+  - `n_estimators`, `learning_rate`, `max_depth`, `subsample`
+- Final model performance:
+  - **R² Score:** ~0.87
+  - **RMSE:** ₹~45,000 (approx. depending on dataset)
+
+---
+
+## 🧪 How to Run Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/AkuCodez/Vehicle-Price-Prediction.git
+cd Vehicle-Price-Prediction/Vehicle_Pred_Proj
+
+# 2. (Optional) Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate        # On Windows use: venv\Scripts\activate
+
+# 3. Install required dependencies
+pip install -r requirements.txt
+
+# 4. Run the Streamlit app
+streamlit run app.py
+
+# 5. Open in browser (if it doesn't open automatically)
+# Visit: http://localhost:8501
+```
