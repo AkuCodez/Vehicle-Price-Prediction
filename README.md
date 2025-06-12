@@ -38,21 +38,20 @@ The model was trained using a dataset of used car listings, with **log-transform
 ## 🖥 Demo
 
 Try it live on [Streamlit Cloud](https://vehicle-price-prediction-gnxxhwzs2swwfbfq7x3rte.streamlit.app/) 🚀  
-*(Replace with actual URL once deployed)*
 
 ---
 
 ## 📂 Project Structure
 
-Vehicle_Pred_Proj/
+```
+Vehicle-Price-Prediction/
 │
-├── app.py # Streamlit app frontend
-├── xgboost_vehicle_price_model.pkl # Trained pipeline (preprocessor + model)
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── data/ # (Optional) raw or processed datasets
-
-
+├── Vehicle_Pred_Proj/
+│   ├── app.py                          # Streamlit web app
+│   ├── xgboost_vehicle_price_model.pkl  # Trained ML pipeline (model + preprocessing)
+│   ├── requirements.txt                # Project dependencies
+│   └── README.md                       # Project documentation
+```
 ---
 
 ## 📈 Model Training Summary
