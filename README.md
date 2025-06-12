@@ -37,7 +37,7 @@ The model was trained using a dataset of used car listings, with **log-transform
 
 ## 🖥 Demo
 
-Try it live on [Streamlit Cloud](https://your-app-link-here) 🚀  
+Try it live on [Streamlit Cloud](https://vehicle-price-prediction-gnxxhwzs2swwfbfq7x3rte.streamlit.app/) 🚀  
 *(Replace with actual URL once deployed)*
 
 ---
