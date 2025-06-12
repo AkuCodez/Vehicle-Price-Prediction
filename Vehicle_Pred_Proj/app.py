@@ -6,7 +6,7 @@ import pandas as pd
 # Load the trained model
 @st.cache_resource
 def load_model():
-    return joblib.load("xgboost_vehicle_price_model.pkl")
+    return joblib.load("Vehicle_Pred_Proj/xgboost_vehicle_price_model.pkl")
 
 model = load_model()
 
